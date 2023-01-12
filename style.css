@@ -1,6 +1,17 @@
 @font-face {
   font-family: "satoshi";
-  src: url(./Fonts/Satoshi-Regular.otf);
+  src: url(./Fonts/Satoshi-Regular.otf) format("opentype") local("satoshi");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "satoshi-mid";
+  src: url(./Fonts/Satoshi-Medium.otf) format("opentype") local("satoshi-mid");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "satoshi-bold";
+  src: url(./Fonts/Satoshi-Bold.otf) format("opentype") local("satoshi-bold");
+  font-weight: bold;
 }
 * {
   margin: 0;
@@ -13,12 +24,14 @@ body {
   background-color: #181818;
 }
 
+/*****************************
+           Nav style
+ *******************************/
 nav {
   display: flex;
   align-items: center;
   padding: 15px;
   justify-content: space-between;
-  /* background-color: wheat; */
   background-image: url(./background/nav-background.svg);
 }
 .nav-menu {
@@ -27,21 +40,23 @@ nav {
 }
 
 .nav-menu > a {
+  font-family: "satoshi-bold";
+  font-weight: bold;
   font-size: 18px;
   margin-left: 48px;
-  font-weight: bold;
   text-decoration: none;
   color: white;
 }
 #hello-btn {
+  font-family: "satoshi-bold";
   font-weight: bold;
   text-decoration: none;
-  font-size: 18px;
+  background-color: #f2f2f2;
   color: black;
+  font-size: 18px;
+  border-radius: 36px;
   margin-left: 48px;
-  background-color: white;
-  padding: 14px 16px;
-  border-radius: 15px;
+  padding: 16px 24px;
 }
 nav > div > h1 {
   font-size: 32px;
@@ -56,6 +71,10 @@ nav > div > h1 {
 .site-logo > h1 {
   margin-left: 10px;
 }
+
+/*******************************
+         Top Section  
+*********************************/
 .top-section {
   display: flex;
   color: white;
@@ -69,22 +88,71 @@ nav > div > h1 {
   padding: 58px;
   width: 50%;
 }
+.top-texts {
+  margin-top: 56px;
+}
+.top-texts > p {
+  font-family: "satoshi-bold";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.top-btns {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.ASAP-bt-container {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 12px 12px 12px 20px;
+  border-radius: 36px;
+}
+.ASAP-btn-logo {
+  margin-left: 8px;
+}
+.ASAP-btn {
+  font-family: "satoshi-bold";
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.works-btn {
+  text-align: center;
+  margin-left: 30px;
+  padding: 20px 32px;
+  border-radius: 36px;
+  border: 2px solid #ffffff;
+  font-size: 20px;
+  font-family: "satoshi-bold";
+  font-weight: bold;
+}
 
 .top-section-part2 {
   width: 50%;
   align-self: flex-end;
 }
 
-.top-section-part2 > p {
-  margin-top: 15px;
+.test-gif {
   width: 292.67px;
   height: 219.5px;
+  margin-bottom: 15px;
+}
+.top-section-part2 > p {
+  font-family: "satoshi-mid";
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .top-section-hearder {
   font-size: 60px;
 }
 
+/*****************************
+       Second Section 
+*******************************/
 .second-section {
   margin: 0;
   padding: 0;
