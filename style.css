@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "satoshi";
+  src: url(./Fonts/Satoshi-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "satoshi", sans-serif;
+  background-color: #181818;
+}
+
+nav {
+  background-image: url(./background/nav-background.svg);
+}
+
+nav > div > h1 {
+  color: #ffff;
+}
+
+.site-logo {
+  display: flex;
+}
+.top-section {
+  display: flex;
+  color: white;
+  background-image: url(./background/Background-01.svg);
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  background-color: #181818;
+  height: 100vh;
+}
+.top-section-part1 {
+  padding: 15px;
+  width: 50%;
+}
+
+.top-section-part2 {
+  width: 50%;
+  align-self: end;
+}
+.top-section-part2 > img {
+  width: 292.67px;
+  height: 219.5px;
+}
+
+.top-section-hearder {
+  font-size: 50px;
+}
+
+.second-section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: white;
+  background-image: url(./background/Background-02.svg);
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  height: 100vh;
+}
+.second-section-part1 {
+  align-self: center;
+  width: 50%;
+}
